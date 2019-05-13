@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+  </head>
+  <body>
+      <h1>Stupid coaching</h1>
+
+
+    <div id="questions">
+     <p><%= params[:question] %></p>
+      <p>-You</p>
+    </div>
+
+    <div id="answer">
+      <p><%= @answer %></p>
+      <p>-Your coach</p>
+    </div>
+
+    <%= link_to "Ask a new questions", "ask", :id=>"back" %>
+  </body>
+</html>
+
+
